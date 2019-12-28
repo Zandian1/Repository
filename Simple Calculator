@@ -1,0 +1,45 @@
+
+import java.util.Scanner;
+
+public class Password {
+
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        String password = "carrot"; // Use carrot as password when running tests.
+
+        while (true){
+            System.out.println("Hello, please type (add) (subtract) (divide) (times) or (quit) -- don't enter the brackets");
+            String function = reader.nextLine();
+            if (function.equals("quit")){
+                System.out.println("Thank you for using :)");
+                break;
+            }
+
+            System.out.println("Please enter the two numbers you wish to calculate (Press enter after each one)");
+            int first = Integer.parseInt(reader.nextLine());
+            System.out.println("Okay now enter the next number");
+            int second = Integer.parseInt(reader.nextLine());
+
+            if (function.equals("add")){
+                int sum = first + second;
+                System.out.println("Answer equals = "+sum);}
+            else if (function.equals("subtract")){
+                int subsum = first - second;
+                System.out.println("Answer equals = "+subsum);}
+            else if (function.equals("divide")){
+                double sumdiv = (double)first / second;
+                System.out.println("Answer equals = "+sumdiv);}
+                else if (function.equals("times")){
+                    int sumtimes = first * second;
+                System.out.println("Answer equals = "+sumtimes);}
+                else {
+                System.out.println("Unknown Command");}
+            }
+
+
+
+            }
+
+
+        }
+
