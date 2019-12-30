@@ -3,7 +3,7 @@ public class FizzBuzz {
     public static void main(String[] args) {
         int number = 0;
 
-        while (number<100){
+        while (number<1_000_000){
 
             number = number+1;
 
@@ -24,7 +24,7 @@ public class FizzBuzz {
 
 
 
-        if (number==100){break;}}
+        if (number==1_000_00){break;}}
 
 
     }
