@@ -33,7 +33,7 @@ public class Main {
             else if (function.equals("divide")){
                 double sumdiv = (double)first / second;
                 System.out.println("Answer equals = "+sumdiv);}
-            else if (function.equals("times")){
+            else if (function.equals("multiply")){
                 int sumtimes = first * second;
                 System.out.println("Answer equals = "+sumtimes);}
             else {
