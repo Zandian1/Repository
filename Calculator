@@ -9,7 +9,7 @@ public class Main {
         Scanner reader = new Scanner(System.in);
 
         while (true){
-            System.out.println("Hello, please type (add) (subtract) (divide) (multiply) or (quit) -- don't enter the brackets");
+            System.out.println("Hello, please type (add) (subtract) (divide) (multiply) (x^y) or (quit) -- don't enter the brackets");
             String function = reader.nextLine();
             if (function.equals("quit")){
                 System.out.println("Thank you for using :)");
@@ -26,6 +26,9 @@ public class Main {
                 System.out.println("Answer equals = "+sum);}
             else if (function.equals("subtract")){
                 int subsum = first - second;
+                System.out.println("Answer equals = "+subsum);}
+            else if (function.equals("x^y")){
+                int subsum = (int)Math.pow(first,second);
                 System.out.println("Answer equals = "+subsum);}
             else if (function.equals("divide")){
                 double sumdiv = (double)first / second;
