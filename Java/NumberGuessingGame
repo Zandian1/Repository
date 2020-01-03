@@ -9,14 +9,25 @@ public class Main{
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         int numberDrawn = drawNumber();
-        System.out.println("Guess a number: ");
+        System.out.println("***************");
+        System.out.println("*GUESSING GAME*");
+        System.out.println("***************");
+        System.out.println(" ");
+        System.out.println("Number chosen between 0 - 100, good luck!");
+        System.out.println(" ");
+        System.out.println("Type a command to begin [start/quit]");
+
+
         int runs = 0;
         int incorrect = 0;
+        String quitCommand = reader.nextLine();
 
+        if (quitCommand.equals("start")){
+            System.out.println("Enter a number to begin: ");
         while (true)
         {
-            int first = Integer.parseInt(reader.nextLine());
 
+            int first = Integer.parseInt(reader.nextLine());
 
             if (first==numberDrawn)
             {
@@ -41,7 +52,13 @@ public class Main{
             }
         }
 
-    }
+    }else if (quitCommand.equals("quit"))
+    {
+        System.out.println("Thank you for playing");
+    }else
+        {
+            System.out.println("Unknown Command");
+        }}
 
     private static int drawNumber() {
         return new Random().nextInt(101);
