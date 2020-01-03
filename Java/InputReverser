@@ -1,0 +1,40 @@
+
+import java.util.Scanner;
+
+public class ReversingText {
+
+    public static String reverse(String text) {
+        int textNumber = text.length()-1;
+        int runs = 0;
+        int charMovement = 0;
+        String help = "";
+        while (textNumber>=runs)
+        {
+            char reversalString = text.charAt(textNumber-charMovement);
+            help = help+reversalString;
+            runs = runs+1;
+            charMovement = charMovement+1;
+
+        }
+        if (help.equals(text))
+        {
+            return "'"+help+"'"+"-->this text is also a palindrome!";
+        }else{
+
+        return help;}
+    }
+
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        System.out.println("******************");
+        System.out.println("* Input Reverser *");
+        System.out.println("******************");
+        System.out.println("");
+        System.out.println("This code reverses your input,");
+        System.out.println("");
+        System.out.println("It also detects whether you've entered a palindrome (input that reads the same either way)");
+        System.out.print("Type in your text: ");
+        String text = reader.nextLine();
+        System.out.println("In reverse order: " + reverse(text));
+    }
+}
