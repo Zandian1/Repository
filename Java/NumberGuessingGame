@@ -32,7 +32,7 @@ public class Main{
             if (first==numberDrawn)
             {
                 System.out.println("Congratulations, your guess is correct!");
-                System.out.println("Total incorrect guesses: "+incorrect);
+                System.out.println("Total guesses: "+incorrect);
                 break;
             }
 
