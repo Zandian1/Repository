@@ -9,6 +9,7 @@ public class Main{
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         int numberDrawn = drawNumber();
+        
         System.out.println("***************");
         System.out.println("*GUESSING GAME*");
         System.out.println("***************");
@@ -29,26 +30,26 @@ public class Main{
 
             int first = Integer.parseInt(reader.nextLine());
 
-            if (first==numberDrawn)
+            if (first == numberDrawn)
             {
                 System.out.println("Congratulations, your guess is correct!");
                 System.out.println("Total guesses: "+incorrect);
                 break;
             }
 
-            else if (first>numberDrawn)
+            else if (first > numberDrawn)
             {
-                runs = runs+1;
-                incorrect=incorrect+1;
-                System.out.println("The number is lesser, guesses made: "+runs);
-                System.out.println("Incorrect guesses so far: "+incorrect);
+                runs = runs + 1;
+                incorrect=incorrect + 1;
+                System.out.println("The number is lesser, guesses made: " + runs);
+                System.out.println("Incorrect guesses so far: " + incorrect);
             }
-            else if (first<numberDrawn)
+            else if (first < numberDrawn)
             {
-                runs = runs+1;
-                incorrect=incorrect+1;
-                System.out.println("The number is greater, guesses made: "+runs);
-                System.out.println("incorrect guessed so far: "+incorrect);
+                runs = runs + 1;
+                incorrect=incorrect + 1;
+                System.out.println("The number is greater, guesses made: " + runs);
+                System.out.println("incorrect guessed so far: " + incorrect);
             }
         }
 
