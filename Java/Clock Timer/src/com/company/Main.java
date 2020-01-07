@@ -30,14 +30,12 @@ public class Main {
             System.out.println( hours + ":" + minutes + ":" + seconds);
             Thread.sleep(1000);
 
-
-
-            if (minutes.getValue()==59&&seconds.getValue()==59)
+            if (minutes.getValue()==59 && seconds.getValue()==59)
             {
                 minutes.next();
                 seconds.next();
-
-                if (hours.getValue()==23&&minutes.getValue()==59&&seconds.getValue()==59)
+                
+                if (hours.getValue()==23 && minutes.getValue()==59 && seconds.getValue()==59)
                 {
                     hours.next();
 
@@ -48,12 +46,9 @@ public class Main {
             {
                 minutes.next();
                 seconds.next();
-
             }
             else
                 seconds.next();
-
-
         }}else System.out.println("Thank you :)");
     }
 
