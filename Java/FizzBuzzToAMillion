@@ -4,10 +4,10 @@ public class Main {
     {
         int number = 0;
 
-        while (number<1_000_000)
+        while (number < 1_000_000)
         {
 
-            number = number+1;
+            number = number + 1;
 
             if
             (number%3 == 0  &&  number%5 == 0)
@@ -24,7 +24,7 @@ public class Main {
             }
             else System.out.println(number);
 
-        if (number==1_000_000){break;}
+        if (number == 1_000_000){break;}
         }
 
 
