@@ -8,20 +8,22 @@ public class ReversingText {
         int runs = 0;
         int charMovement = 0;
         String help = "";
-        while (textNumber>=runs)
+        
+        while (textNumber >= runs)
         {
-            char reversalString = text.charAt(textNumber-charMovement);
-            help = help+reversalString;
-            runs = runs+1;
-            charMovement = charMovement+1;
-
+            char reversalString = text.charAt(textNumber - charMovement);
+            help = help + reversalString;
+            runs = runs + 1;
+            charMovement = charMovement + 1;
         }
+        
         if (help.equals(text))
         {
             return "'"+help+"'"+"-->this text is also a palindrome!";
-        }else{
-
-        return help;}
+        }else
+        {
+        return help;
+        }
     }
 
     public static void main(String[] args) {
