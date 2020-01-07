@@ -18,7 +18,6 @@ public class Main{
         System.out.println(" ");
         System.out.println("Type a command to begin [start/quit]");
 
-
         int runs = 0;
         int incorrect = 0;
         String quitCommand = reader.nextLine();
@@ -27,7 +26,6 @@ public class Main{
             System.out.println("Enter a number to begin: ");
         while (true)
         {
-
             int first = Integer.parseInt(reader.nextLine());
 
             if (first == numberDrawn)
@@ -41,6 +39,7 @@ public class Main{
             {
                 runs = runs + 1;
                 incorrect=incorrect + 1;
+                
                 System.out.println("The number is lesser, guesses made: " + runs);
                 System.out.println("Incorrect guesses so far: " + incorrect);
             }
@@ -48,6 +47,7 @@ public class Main{
             {
                 runs = runs + 1;
                 incorrect=incorrect + 1;
+                
                 System.out.println("The number is greater, guesses made: " + runs);
                 System.out.println("incorrect guessed so far: " + incorrect);
             }
